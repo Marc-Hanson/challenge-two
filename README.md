@@ -1,14 +1,14 @@
 # Simon Says
 
-Lucky Dice is a basic dice rolling game! Once the page loads you will be given a random dice roll between 1 and 6, and the computer opponent will be given the same! Who will win in this game of purest chance? Are you feeling lucky!?
+Simon Says is a homage to a 1978 childrens toy of the same name. It's produces a pattern that the user has to remember and copy, and continues to add a new colour to the end every new turn. If a mistake is made the game begins again.
 
 ![Responsive Mockup](assets/images/readme/responsive.jpg)
 
-The Lucky Dice site is live and is currently hosted [HERE!](https://marc-hanson.github.io/challenge-one/)
+The Simon Says site is live and is currently hosted [HERE!](https://marc-hanson.github.io/challenge-two/)
 
 ## Features
 
-The game was styled with a feeling for the wild west and gambling in an old timey saloon. The fonts chosen: 'Rye' and 'Smokum' both push that theme as well as a sunset color palette of yellows, oranges and browns.
+The game was styled with a dark background, and light pastel greens to be easy on the eyes and to bring focus to the bright colours on the buttons. The colours used on the buttons were taken from 'https://wowpedia.fandom.com/wiki/Quality' and is the text colour used for different loot rarity in World of Warcraft. The font 'Finger Paint' was used across the whole project to keep uniformity and provide a fun, relaxed feel.
 
 ![Color Palette](assets/images/readme/palette.jpg)
 
@@ -16,30 +16,27 @@ The game was styled with a feeling for the wild west and gambling in an old time
 
 - **The Heading**
 
-  - Featured at the top of the page, the heading is used to welcome the user to the page. Once the dice have been rolled the heading will display the winner or loser of the game.
+  - Featured at the top of the page, the heading is used to provide basic instruction to the user. This is updated throughout the project to show the current level the user has reached.
 
 ![Heading](assets/images/readme/heading.jpg)
 
 - **The Game Area**
 
-  - This section will display the outcomes of both the players dice and your opponents dice.
+  - This section will display the four game buttons, which fade out and in to show the next button in the sequence. A sound will play when the button is clicked and addition feedback is provided by briefly changing the buttons colour on click.
 
 ![Game](assets/images/readme/game.jpg)
 
 - **Instructions**
 
-  - This section gives the user playing instructions and the rules of the game.
+  - Once the game is over, the heading is changed to display a 'Game Over' message and ask the user to press a button if they wish to play again.
 
 ![Instructions](assets/images/readme/instructions.jpg)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 ### Features Left to Implement
 
-- Scoreboard
-- Event Listeners to allow a click on the dice instead of page refresh.
+- Scoreboard to show high scorers for the day.
+- Light/dark mode.
+- Themed colours and background for different holidays and events.
 
 ## Testing
 
@@ -80,6 +77,7 @@ None.
 - HTML5
 - CSS3
 - Javascript
+- jQuery
 
 ### Frameworks, Libraries & Programs Used
 
@@ -92,18 +90,18 @@ None.
 
 ### Using GitHub Pages
 
-Github Repository or project - <https://marc-hanson.github.io/challenge-one/>
+Github Repository or project - <https://marc-hanson.github.io/challenge-two/>
 
 1. Click the 'Settings' Tab.
 2. Scroll Down to the Git Hub Pages Heading.
 3. Select 'Main Branch' as the source.
 4. The Page will reload 'Settings' again.
-5. Scroll to GitHub pages heading and there will now be a clickable link <https://marc-hanson.github.io/challenge-one/>
+5. Scroll to GitHub pages heading and there will now be a clickable link <https://marc-hanson.github.io/challenge-two/>
 6. Click the link for the live deployed page.
 
 ### Fork Project
 
-1. On GitHub, go to [marc-hanson/challenge-one/](https://marc-hanson.github.io/challenge-one/).
+1. On GitHub, go to [marc-hanson/challenge-one/](https://marc-hanson.github.io/challenge-two/).
 2. In the top right, click "Fork".
 
 ### Clone Project
@@ -118,8 +116,8 @@ Github Repository or project - <https://marc-hanson.github.io/challenge-one/>
 
 ## Credits
 
-- All images used on this site were taken from [Pixabay](https://pixabay.com/users/clker-free-vector-images-3736/)
+- All images used on this site were taken from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music)
 - Color palette was taken from Colorhunt.io
 - The inspiration for this site is taken from Angela Yu's The Complete 2023 Web Development Bootcamp on Udemy.
 
-[Back to top](#lucky-dice)
+[Back to top](#simon-says)

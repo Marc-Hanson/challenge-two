@@ -66,7 +66,7 @@ function animatePress(currentColour) {
 
 // Plays sounds on demand.
 function playSound(name) {
-    var audio = new Audio("/assets/sounds/" + name + ".mp3");
+    var audio = new Audio("assets/sounds/" + name + ".mp3");
     audio.play();
 }
 
