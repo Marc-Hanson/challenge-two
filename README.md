@@ -1,39 +1,125 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Simon Says
 
-Welcome,
+Lucky Dice is a basic dice rolling game! Once the page loads you will be given a random dice roll between 1 and 6, and the computer opponent will be given the same! Who will win in this game of purest chance? Are you feeling lucky!?
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](assets/images/readme/responsive.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The Lucky Dice site is live and is currently hosted [HERE!](https://marc-hanson.github.io/challenge-one/)
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The game was styled with a feeling for the wild west and gambling in an old timey saloon. The fonts chosen: 'Rye' and 'Smokum' both push that theme as well as a sunset color palette of yellows, oranges and browns.
 
-`python3 -m http.server`
+![Color Palette](assets/images/readme/palette.jpg)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **The Heading**
 
-`http_server`
+  - Featured at the top of the page, the heading is used to welcome the user to the page. Once the dice have been rolled the heading will display the winner or loser of the game.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Heading](assets/images/readme/heading.jpg)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **The Game Area**
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - This section will display the outcomes of both the players dice and your opponents dice.
 
-To log into the Heroku toolbelt CLI:
+![Game](assets/images/readme/game.jpg)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **Instructions**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - This section gives the user playing instructions and the rules of the game.
 
----
+![Instructions](assets/images/readme/instructions.jpg)
 
-Happy coding!
+For some/all of your features, you may choose to reference the specific project files that implement them.
+
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+
+### Features Left to Implement
+
+- Scoreboard
+- Event Listeners to allow a click on the dice instead of page refresh.
+
+## Testing
+
+- The website was constantly tested during development using Chrome development tools.
+- Javascipt was ran after every new function to ensure it was behaving as intended.
+- Website tested in Chrome, Firefox and Microsoft Edge.
+- Website was tested across a range of devices including laptops, tablets and mobiles.
+
+### Testing During Development
+
+- A random number variable was created for the player and opponent and tested with 'console.log()'.
+- The images were then updated using this result and tested on a 'python3 http.server'.
+- The final game was pushed to github and tested on multiple devices, all file paths began with a / which resulted in links between Javascript and CSS pages as well as images to display not working correctly. This was later fixed.
+
+### Validator Testing
+
+- HTML
+  - HTML pages passed validation on W3C. <br>
+    ![index.html validation](/assets/images/readme/html.jpg)
+- CSS
+  - CSS page passed validation on W3C. <br>
+    ![style.css validation](/assets/images/readme/css.jpg)
+- LIGHTHOUSE
+  - Prefect scores across Lighthouse. <br>
+    ![Lighthouse score](/assets/images/readme/lighthouse.jpg)
+- JSHINT
+  - All Javascript passed through JSHint, unused functions are ran through the HTML onclick property. ES8 warnings are due to async functions being used in most of the games functions. <br>
+    ![JSHint vlidation](assets/images/readme/javascript.jpg)
+
+### Unfixed Bugs
+
+None.
+
+## Technologies Used
+
+### Main Languages Used
+
+- HTML5
+- CSS3
+- Javascript
+
+### Frameworks, Libraries & Programs Used
+
+- Am I Responsive? - to ensure the project looked good across all devices.
+- CodeAnywhere - was the chosen IDE to write both HTML and CSS before pushing the project to Github.
+- GitHub - to import the CodeInstitute template from and to store my repository.
+- VSCode - used to keep work on local versions of the site.
+
+## Deployment
+
+### Using GitHub Pages
+
+Github Repository or project - <https://marc-hanson.github.io/challenge-one/>
+
+1. Click the 'Settings' Tab.
+2. Scroll Down to the Git Hub Pages Heading.
+3. Select 'Main Branch' as the source.
+4. The Page will reload 'Settings' again.
+5. Scroll to GitHub pages heading and there will now be a clickable link <https://marc-hanson.github.io/challenge-one/>
+6. Click the link for the live deployed page.
+
+### Fork Project
+
+1. On GitHub, go to [marc-hanson/challenge-one/](https://marc-hanson.github.io/challenge-one/).
+2. In the top right, click "Fork".
+
+### Clone Project
+
+1. Go to the main page of the repository.
+2. Above the file list, click "Code".
+3. Select HTTPS, SSH, or GitHub CLI and then click copy to clone it.
+4. Open Git Bash.
+5. Change the location of your cloned repository.
+6. Type `git clone` and then paste the URL you copied.
+7. Press “Enter” to create you
+
+## Credits
+
+- All images used on this site were taken from [Pixabay](https://pixabay.com/users/clker-free-vector-images-3736/)
+- Color palette was taken from Colorhunt.io
+- The inspiration for this site is taken from Angela Yu's The Complete 2023 Web Development Bootcamp on Udemy.
+
+[Back to top](#lucky-dice)
