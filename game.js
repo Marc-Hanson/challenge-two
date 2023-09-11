@@ -15,13 +15,15 @@ $(document).keypress(function () {
 });
 
 // Adds event listeners to game buttons.
-$(".btn").click(function () {
-    var userChosenColour = $(this).attr("id");
-    userClickedPattern.push(userChosenColour);
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
-    checkAnswer(userClickedPattern.length - 1);
-});
+if (started) {
+    $(".btn").click(function () {
+        var userChosenColour = $(this).attr("id");
+        userClickedPattern.push(userChosenColour);
+        playSound(userChosenColour);
+        animatePress(userChosenColour);
+        checkAnswer(userClickedPattern.length - 1);
+    });
+}
 
 // Checks to see if user input matches.
 function checkAnswer(currentLevel) {
