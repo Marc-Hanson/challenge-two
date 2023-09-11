@@ -1,8 +1,7 @@
 # Simon Says
 
 Simon Says is a homage to a 1978 childrens toy of the same name. It's produces a pattern that the user has to remember and copy, and continues to add a new colour to the end every new turn. If a mistake is made the game begins again.
-
-![Responsive Mockup](assets/images/readme/responsive.jpg)
+The project is currently for PC only and is not responsive to smaller screens, this might be changed at a later date but there are currently no plans to make this program responsive.
 
 The Simon Says site is live and is currently hosted [HERE!](https://marc-hanson.github.io/challenge-two/)
 
@@ -43,13 +42,12 @@ The game was styled with a dark background, and light pastel greens to be easy o
 - The website was constantly tested during development using Chrome development tools.
 - Javascipt was ran after every new function to ensure it was behaving as intended.
 - Website tested in Chrome, Firefox and Microsoft Edge.
-- Website was tested across a range of devices including laptops, tablets and mobiles.
 
 ### Testing During Development
 
 - A random number variable was created for the player and opponent and tested with 'console.log()'.
 - The images were then updated using this result and tested on a 'python3 http.server'.
-- The final game was pushed to github and tested on multiple devices, all file paths began with a / which resulted in links between Javascript and CSS pages as well as images to display not working correctly. This was later fixed.
+- The final game was pushed to github and tested on multiple devices, all sounds file paths began with a / which resulted in no sounds being played when the games buttons were clicked. This was later fixed.
 
 ### Validator Testing
 
@@ -63,7 +61,7 @@ The game was styled with a dark background, and light pastel greens to be easy o
   - Prefect scores across Lighthouse. <br>
     ![Lighthouse score](/assets/images/readme/lighthouse.jpg)
 - JSHINT
-  - All Javascript passed through JSHint, unused functions are ran through the HTML onclick property. ES8 warnings are due to async functions being used in most of the games functions. <br>
+  - All Javascript passed through JSHint, and the only issues reported are jQuery tags. <br>
     ![JSHint vlidation](assets/images/readme/javascript.jpg)
 
 ### Unfixed Bugs
@@ -81,8 +79,8 @@ None.
 
 ### Frameworks, Libraries & Programs Used
 
-- Am I Responsive? - to ensure the project looked good across all devices.
 - CodeAnywhere - was the chosen IDE to write both HTML and CSS before pushing the project to Github.
+- jQuery - used to reduce the amount of Javasript written.
 - GitHub - to import the CodeInstitute template from and to store my repository.
 - VSCode - used to keep work on local versions of the site.
 
