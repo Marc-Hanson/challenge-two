@@ -9,13 +9,14 @@ var level = 0;
 $(document).keypress(function () {
     if (!started) {
         $("#level-title").text("LEVEL " + level);
+        buttonListeners();
         nextSequence();
         started = true;
     }
 });
 
-// Adds event listeners to game buttons.
-if (started) {
+// Adds/removes event listeners to game buttons.
+function buttonListeners() {
     $(".btn").click(function () {
         var userChosenColour = $(this).attr("id");
         userClickedPattern.push(userChosenColour);
@@ -38,7 +39,7 @@ function checkAnswer(currentLevel) {
         playSound("wrong");
         $("body").addClass("game-over");
         $("#level-title").text("PRESS A KEY TO TRY AGAIN!");
-
+        $(".btn").off();
         setTimeout(function () {
             $("body").removeClass("game-over");
         }, 500);
